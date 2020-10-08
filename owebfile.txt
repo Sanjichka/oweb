@@ -1,0 +1,3 @@
+instalacija na git
+
+https://vscode-auth.github.com/authorize?authServer=https://github.com/&callbackUri=vscode://GitHub.vscode-pull-request-github/did-authenticate&scope=read:user%20user:email%20repo%20write:discussion
