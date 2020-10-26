@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="web page,design,HTML5,CSS3">
+        <title>vproba_galerija</title>
+        <style type="text/css">
+        .scrl   
+            {
+                position:fixed;
+                top: 0;
+                z-index: 1;
+                width: 99%;
+                background-color: #31c25a;
+                height: 70px;
+            }
+        .ta   
+            {
+                text-align: center;
+            }
+        .link
+            {
+                color:rgb(210, 30, 120);
+            }
+        body  
+            {
+                background-color:rgb(212, 214, 207);
+            }
+        table th img
+            {
+                width:350px;
+                height:230px;
+            }
+        table
+            {
+                width:60%;
+                padding-top:6%;
+                padding-left: 22%;
+            }
+        th 
+            {
+                padding: 25px;
+            }
+        .textarea
+            {
+                position:relative;
+                left:34%;
+            }
+        .kopche
+            {
+                position:relative;
+                left:34%;
+            }
+        .naslov
+            {
+                text-align: center;
+                color:chocolate;
+                text-shadow: -1px 1px .5px #31c25a;
+                font-weight: 600;
+            }
+        img
+            {
+                border: 7px solid #31c25a;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="scrl">
+            <h2 class="ta"><a class="link" href="vproba_home.html">DOMA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_galerija.html">GALERIJA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_blog.html">BLOG</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_anketa.html">ANKETA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_contact.html">KONTAKT</a></h2>
+        </header>
+        <table>
+            <form method="POST" action="vproba_galerija.html">
+                <tr>
+                    <th colspan="2"><h1 class="naslov">Izberi omileno godishno vreme:</h1></th>
+                </tr>
+                <tr>
+                    <th><img src="spring.jpg" alt="SPRING"></th>
+                    <th><img src="summer.jpg" alt="SUMMER"></th>
+                </tr>
+                <tr>
+                    <th>
+                            <label class="link">
+                                <input type="radio" name="vreme" value="str">Prolet
+                            </label>
+                    </th>
+                    <th>
+                            <label class="link">
+                                <input type="radio" name="vreme" value="sum">Leto
+                            </label>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="autumn.jpg" alt="AUTUMN"></th>
+                    <th><img src="winter.jpg" alt="WINTER"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="link">
+                            <input type="radio" name="vreme" value="aut">Esen
+                        </label>
+                    </th>
+                    <th>
+                        <label class="link">
+                            <input type="radio" name="vreme" value="win">Zima
+                        </label>
+                    </th>
+                </tr>
+            
+        </table>
+        <p>
+            <textarea class="textarea" rows=7 cols=60 placeholder="Objasni zoshto tokmu toa e tvoeto omileno godishno vreme."></textarea>
+        </p>
+        <p class="kopche">
+            <input style="margin-right: 345px;" type="submit" value="Isprati">
+            <input type="reset" value="Izbrishi">
+        </p>
+    </form>
+    <footer>
+        <h6>&copy;2020 by Sanja Siljanoska, Inc. All Rights Reserved.</h6>
+    </footer>
+    </body>
+</html>

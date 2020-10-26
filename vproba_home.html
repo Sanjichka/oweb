@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="web page,design,HTML5,CSS3">
+        <title>vproba_home</title>
+        <style type="text/css">
+            table{
+                color:chocolate;
+                border: 4px solid #31c25a;
+            }
+            .scrl {
+                     position:fixed;
+                     top: 0;
+                     z-index: 1;
+                     width: 99%;
+                     background-color: #31c25a;
+                     height: 70px;
+                  }
+            .ta   {
+                     text-align: center;
+                  }
+            body  {
+                    background-color:rgb(212, 214, 207);
+                  }
+            .boxed
+                 {
+                        position: absolute;
+                        width: 1000px;
+                        top: 20%;
+                        left: 20%;
+                        transform: translate(-10%,-10%);
+                        padding: 20px;
+                        box-sizing: border-box;
+                        display: flex;
+                        margin-bottom: 10px;
+                 }
+            .imgbx
+                {
+                    flex: 0 0 150px;
+                }
+            .content
+                {
+                    margin:0;
+                    padding:10px 0 0;
+                    text-align: justify;
+                    font-size: 24px;
+                    padding-left: 20px;
+                    font-weight:500;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color:chocolate;
+                    font-weight: 600;
+                    text-shadow: -1.5px 1.5px .5px #31c25a;
+                }
+            .poc
+                {
+                    color:rgb(210, 30, 120);
+                }
+            .box2
+                {
+                    position: relative;
+                    width: 800px;
+                    top: 380px;
+                    left: 20%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                .nadvor
+                {
+                    color:rgb(210, 30, 120);
+                    font-size:20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 600;
+                    position: relative;
+                    margin:auto;
+                    min-width: 950px;
+                }
+                .link
+                {
+                    color:rgb(210, 30, 120);
+                }
+                .vnatre
+                {
+                    font-family: Arial, Helvetica, sans-serif;
+                    color:chocolate;
+                    text-shadow: -1px 1px .5px #31c25a;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                .gran
+                {
+                    border: 7px solid #31c25a;
+                    border-radius: 50px;
+                }
+                .lis
+                {
+                    font-size: large;
+                    color:rgb(210, 30, 120);
+                }
+        </style>    
+    </head>
+    <body>
+            <header class="scrl">
+                <h2 class="ta"><a class="link" href="vproba_home.html">DOMA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_galerija.html">GALERIJA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_blog.html">BLOG</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_anketa.html">ANKETA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_contact.html">KONTAKT</a></h2>
+            </header>
+            <div class="boxed">
+                <div class="imgbx"><img style="border: 7px solid #31c25a; border-radius: 50px;" src="u.PNG" height="200" width="200" alt="SANJA"></div>
+                <p class="content">
+                    Ime i prezime:<span class="poc">Sanja Siljanoska</span><br>
+                    Rodena:<span class="poc">20.1.2000</span><br>
+                    Mesto na zhiveenje:<span class="poc"> Skopje, Makedonija</span><br>
+                    Fakultet: <span class="poc"><a class="link" href="https://feit.ukim.edu.mk/" target="_blank">FEIT</a></span><br>
+                    Zdravo chitatelu, <br>
+                    Jas sum Sanja kako shto mozhesh da vidish pogore i eve nekoi informacii so koi mozhesh podobro da me zapoznaesh:<br>
+                </p>
+            </div>
+            <div class="box2">
+                <p><details>
+                    <summary class="nadvor">
+                        Imam domashno mileniche kuche, se vika Pufi.
+                    </summary>
+                    <div>
+                    <p class="vnatre">Ima 1 &frac12; godinka, mnogu e energichna,<br> nejzinoto omileno mesto e pokraj frizhiderot.<br></p>
+                    <img class="gran" src="Pufi.jpg" alt="Pufi" width="150" height="175"></div>
+                    </details>
+                </p>
+                <p><details>
+                    <summary class="nadvor">
+                        Mnogu sakam da gledam filmovi, no toa e obratnoproporcionalno so <a class="link" href="https://feit.ukim.edu.mk/" target="_blank">FEIT</a>.
+                    </summary>
+                    <p class="vnatre">Vo slobodno vreme odam vo Cineplexx,<br> ovie se moite omileni proekcii za ovoj mesec:<br></p>
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th rowspan="2"><img src="cineplexx.png" alt="CINEPLEXX" width="180" height="120"></th>
+                                <th>Film1</th>
+                                <th>Film2</th>
+                                <th>Film3</th>
+                            </tr>
+                            <tr>
+                                <td><a class="link" href="https://youtu.be/AZGcmvrTX9M" target="_blank">Tenet</a></td>
+                                <td><a class="link" href="https://youtu.be/X0K5cA2hS6g" target="_blank">Vojna so dedo</a></td>
+                                <td><a class="link" href="https://youtu.be/ZUa0Mtdv1HQ" target="_blank">Nezavisni</a></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Zhanr</th>
+                                <td>Akcija</td>
+                                <td>Komedija</td>
+                                <td>Drama</td>
+                            </tr>
+                            <tr>
+                                <th>Vid proekcija</th>
+                                <td>3D</td>
+                                <td>2D</td>
+                                <td>2D</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Cena:</th>
+                                <td>300den.</td>
+                                <td>250den.</td>
+                                <td>250den.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    </details>
+                <p><details>
+                    <summary class="nadvor">
+                        Ljubitel sum na vkusna hrana i sekogash raspolozhena za neshto novo vo ovaa oblast.
+                    </summary>
+                    <p class="vnatre">Hranata e mnogu vazhen del od nashiot zhivot,<br> pa eve nekoi restorani kako predlog za vkusna hrana:<br></p>
+                    <nav>
+                        <ul>
+                            <li><a class="lis" href="https://equilibrium.mk/" target="_blank">Restaurant &amp Coffee Bar Equilibrium</a></li>
+                            <li><a class="lis" href="http://martinicaffe.mk/" target="_blank">Caffe Bar Martini</a></li>
+                            <li><a class="lis" href="http://caffetrend.mk/" target="_blank">Trend Lounge Restaurant</a></li>
+                            <li><a class="lis" href="https://revija.mk/wp/" target="_blank">Revija Bar &amp Food</a></li>
+                        </ul>
+                    </nav>
+                </details>
+                </p>
+                <p><details>
+                    <summary class="nadvor">
+                        Kako za site taka i za mene, muzikata e hrana i spokoj za mojata dusha.
+                    </summary>
+                    <p class="vnatre">Muzikata dopira do nashite srca,<br> predizvikuva pozitivni emocii i harmonija.<br>Ajde da pochuvstvuvame zaedno!</p>
+                    <audio controls class="gran">
+                        <source src="Jason Derulo - SAVAGE LOVE (Prod. Jawsh 685) (Lyrics).mp3" type="audio/mp3">
+                      Your browser does not support the audio element.
+                      </audio>
+                </details>
+                </p><br><br><br><br><br>
+                <footer>
+                    <h6>&copy;2020 by Sanja Siljanoska, Inc. All Rights Reserved.</h6>
+                </footer>
+            </div>
+            
+    </body>
+</html>

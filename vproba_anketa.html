@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="web page,design,HTML5,CSS3">
+        <title>vproba_anketa</title>
+        <style type="text/css">
+        .scrl   
+            {
+                position:fixed;
+                top: 0;
+                z-index: 1;
+                width: 99%;
+                background-color: #31c25a;
+                height: 70px;
+            }
+        .ta   
+            {
+                text-align: center;
+            }
+        .link
+            {
+                color:rgb(210, 30, 120);
+            }
+        body  
+            {
+                background-color:rgb(212, 214, 207);
+            }
+        .sa
+            {
+                padding:8%;
+                text-align: center;
+            }
+        .portok
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                color:chocolate;
+                font-weight: 600;
+                text-shadow: -1.5px 1.5px .5px #31c25a;
+                font-size: xx-large;
+            }
+        .ord
+            {
+                list-style-position:inside;
+            }
+        .nepar
+            {
+                color:rgb(210, 30, 120);
+                font-size: x-large;
+                font-weight: 550;
+            }
+        .par
+            {
+                color: #31c25a;
+                font-size: x-large;
+                font-weight: 550;
+            }
+        .odg
+            {
+                color:chocolate;
+                font-size: x-large;
+                font-weight: 550;
+                text-shadow: -1px 1px .5px #31c25a;
+            }
+        .tarea
+            {
+                background-color: rgb(228, 230, 223);
+                border: 3px dotted chocolate;
+                color:rgb(68, 65, 63);
+            }
+        .dd
+            {
+                color:chocolate;
+                font-size: large;
+                font-weight: 500;
+                text-shadow: -1px 1px .5px #31c25a;
+                background-color: rgb(185, 214, 194);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="scrl">
+            <h2 class="ta"><a class="link" href="vproba_home.html">DOMA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_galerija.html">GALERIJA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_blog.html">BLOG</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_anketa.html">ANKETA</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="link" href="vproba_contact.html">KONTAKT</a></h2>
+        </header>
+        <form  class="sa" method="POST" action="vproba_home.html">
+            <h3 class="portok">Za nas najvazhno e mislenjeto na nashite korisnici!<br> Popolni ja ovaa nasha mini anketa za da bideme vo tek so tvoite baranja</h3>
+            <br><nav>
+                <ol class="ord">
+                    <li class="nepar">
+                        <label<br>Dali ti se dopagja nashata strana?<br><br>
+                            <input type="radio" name="like" value="Mi se dopagja" required><span class="odg">Mi se dopagja</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="like" value="Ne mi se dopagja" required><span class="odg">Ne mi se dopagja</span></label><br><br><br>
+                    </li>
+                    <li class="par">
+                        <label>Kako bi gi ocenil/a nashite nedelni prashalnici objavuvani vo delot "Galerija"?<br><br>
+                            <span class="odg">0</span><input type="range" min="0" max="10" step="1" value="6"><span class="odg">10</span>
+                        </label><br><br><br>
+                    </li>
+                    <li class="nepar">
+                        <label>Koi sodrzhini bi sakal/a najmnogu da gi gledash kako glavna nedelna tema vo nashiot del "Blog"?<br><br>
+                            <input type="checkbox" name="temi" ><span class="odg">Kulinarstvo</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="temi" ><span class="odg">Obleka</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="temi" ><span class="odg">Avtomobili</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="temi" ><span class="odg">Video Igri</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="temi" ><span class="odg">Sport</span>
+                        </label><br><br><br>
+                    </li>
+                    <li class="par">
+                        <label>Dokolku vo prashanjeto broj 3. ne e ponudena kako odgovor tvojata omilena tema te molam zapishi ja podolu:<br><br>
+                            <textarea class="tarea" rows=4 cols="50" placeholder="Vnesi tema."></textarea>
+                        </label><br><br><br>
+                    </li>
+                    <li class="nepar">
+                        <label>Vo koj den od sedmicata sakash da bide azhuriranjeto na nedelnite podatoci i zabavni temi?<br><br>
+                            <select name="l" class="dd">
+                                <option selected>Ponedelnik</option>
+                                <option>Vtornik</option>
+                                <option>Sreda</option>
+                                <option>Chetvrtok</option>
+                                <option>Petok</option>
+                                <option>Sabota</option>
+                                <option>Nedela</option>
+                            </select>
+                        </label><br><br><br>
+                    </li>
+                    <li class="par">
+                        <label>Vo koja izminata sedmica najmnogu ti se dopadnaa sodrzhinite na nashata strana?<br><br>
+                            <input class="dd" type="week">
+                        </label><br><br><br>
+                    </li>
+                    <li class="nepar">
+                        <label for="txtlist">Vekje sme pri krajot na ovaa godina, pa bi te prashale koj mesec od nea ti ostavi najgolem vpechatok vo odnos na sodrzhinite na nashata strana?<br><br>
+                            <input type="text" id="txtlist" list="months" class="dd">
+                            <datalist id="months">
+                                <option value="Januari"></option>
+                                <option value="Fevruari"></option>
+                                <option value="Mart"></option>
+                                <option value="April"></option>
+                                <option value="Maj"></option>
+                                <option value="Juni"></option>
+                                <option value="Juli"></option>
+                                <option value="Avgust"></option>
+                                <option value="Septemvri"></option>
+                                <option value="Oktomvri"></option>
+                                <option value="Noemvri"></option>
+                                <option value="Dekemvri"></option>
+                            </datalist>
+                        </label><br><br><br>
+                    </li>
+                    <li class="par">
+                        <label>Vo koja vozrasna grupa spagjash?<br><br>
+                            <input type="radio" name="vozr" ><span class="odg">0-18</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="vozr" ><span class="odg">19-30</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="vozr" ><span class="odg">31-45</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="vozr" ><span class="odg">46-60</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="vozr" ><span class="odg">Nad 60</span></label>
+                        </label><br><br><br>
+                    </li>
+                    <li class="nepar">
+                        <label>Kakov "Blog" ochekuvash slednata sedmica?<br> Da vidime dali mozhesh da pogodish?!<br><br>
+                            <input type="radio" name="pogod" ><span class="odg">Najnovi vesti vo svetot</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="pogod" ><span class="odg">Sport</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="pogod" ><span class="odg">Online nastava</span></label>
+                        </label><br><br><br>
+                    </li>
+                    <li class="par">
+                        <label>Kakva "Galerija" ochekuvash slednata sedmica?<br> Da vidime dali mozhesh da pogodish?!<br><br>
+                            <input type="radio" name="pogodg" ><span class="odg">Novogodishno izdanie</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="pogodg" ><span class="odg">Shto prvo prepoznavash</span></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="pogodg" ><span class="odg">Kolku razliki mozhesh da zabelezhish</span></label>
+                        </label><br><br><br>
+                    </li>
+                </ol>
+                <p>
+                    <input style="margin-right: 345px;" type="submit" value="Isprati">
+                    <input type="reset" value="Izbrishi">
+                </p>
+            </nav>
+        </form>
+        <footer>
+            <h6>&copy;2020 by Sanja Siljanoska, Inc. All Rights Reserved.</h6>
+        </footer>
+    </body>
+</html>

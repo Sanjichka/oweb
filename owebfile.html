@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SANJA</title>
+        <style type="text/css">
+        div 
+        {
+            width:  200px;
+            height: 200px;
+            border: 3px solid navy;
+            padding: 5px 20px;
+            text-align: center;
+            background: -webkit-gradient(
+                linear, center top, center bottom,
+                color-stop(15%,white),color-stop(50%, lightsteelblue),
+                color-stop(75%,navy)
+            );
+            background: -moz-linear-gradient(
+                top center,white 15%,lightsteelblue 50%,navy 75%
+            );
+            background: linear-gradient(
+                top,white 15%,lightsteelblue 50%,navy 75%
+            )
+        }
+        </style>
+    </head>
+
+    <body>
+        <form method="POST" action="#">
+            <p>
+                <label for="textid">Month:
+                    <input type="text" id="textid" list="months">
+                    <datalist id="months">
+                        <option value="sanja"></option>
+                        <option value="viktor"></option>
+                    </datalist>
+                </label>
+                <label>Izberi:
+                    0<input type="range" min="0" max="20" value="10">20
+                </label>
+                <label>Izberi:<br>
+                    <input type="checkbox" value="Design">Design<br>
+                    <input type="checkbox" value="Desig">Desig<br>
+                </label>
+            </p>
+            <p><label>Submit:
+                <input type="submit" value="Submit">
+            </label></p>
+        </form>
+        <div>Vertical</div>
+    </body>
+</html>
